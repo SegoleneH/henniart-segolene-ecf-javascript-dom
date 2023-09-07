@@ -1,0 +1,123 @@
+/* General */
+:root{
+    font-family: 'Raleway', sans-serif;
+    --noir : #000000;
+    --bleu: #0081a5;
+    --orangeFonce: #c2340d;
+    --vert: rgb(102, 245, 36);
+}
+
+  /* Header */
+header, .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    background-color: var(--orangeFonce);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    border: solid 4px var(--orangeFonce);
+    border-radius: 20px;
+    margin: 2vh auto;
+}
+.button:hover{
+    border: solid 4px var(--bleu);
+    cursor: pointer;
+}
+    /* Main */
+main, tr, td {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main{
+    padding-top: 20px;
+}
+  /* Tableau */
+
+table{
+    width: 40vw;
+    border: solid 2px var(--noir);
+    border-radius: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* .markByNumber {
+    box-shadow: 0 0 8px 2px var(--noir);
+} */
+
+tr{
+    font-size: 25px;
+}
+td{
+    width: 40%;
+}
+.tableIntro{
+    justify-content: space-evenly;
+    padding: 25px 0;
+    border-bottom: solid 2px var(--noir);
+}
+.studentName{
+    margin: 5px;
+    padding: 0 10px;
+} 
+.mark{
+    border: transparent;
+    margin: 5px 0;
+    border-radius: 15px;
+    text-align: center;
+    border: solid 3px var(--noir);
+    width: 60px;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+ 
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+
+/* Inputs on focus details */
+input.mark:focus {
+    caret-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: solid 3px var(--bleu);
+}
+input.mark:hover{
+    cursor: pointer;
+}
+/* color mode table */
+.markByColor{
+    
+    /** >tbody{} */
+    >tbody>tr>td>.defaultColor{
+        background-color: var(--vert);
+        color: transparent;
+    }
+    >tbody>tr>td>.colorOne {
+        background-color: rgb(179, 0, 0);
+        color: transparent;
+    }
+    >tbody>tr>td>.colorTwo {
+        background-color: rgb(226, 102, 0);
+        color: transparent;
+    }
+    >tbody>tr>td>.colorThree {
+        background-color: rgb(255, 255, 42);
+        color: transparent;
+    }
+    >tbody>tr>td>.colorFour{
+        background-color: var(--vert);
+        color: transparent;
+    }
+}
